@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'review_list.dart';
+import 'primary_button.dart';
 
 class DescriptionPlace extends StatelessWidget {
   int numberStars;
@@ -37,7 +38,8 @@ class DescriptionPlace extends StatelessWidget {
 
     // * Cuando los elementos estan apilados uno debajo del otro pues utilizamos una columna.
     return Column(
-      children: <Widget>[titleStart, description],
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[titleStart, description, PrimaryButton("Navigate")],
     );
   }
 
