@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'review_list.dart';
 
 class DescriptionPlace extends StatelessWidget {
   int numberStars;
@@ -17,7 +18,10 @@ class DescriptionPlace extends StatelessWidget {
             margin: EdgeInsets.only(top: 320.0, left: 20.0, right: 20.0),
             child: Text(
               namePlace,
-              style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  fontSize: 30.0,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "Lato"),
               textAlign: TextAlign.left,
             )),
         star
@@ -27,7 +31,8 @@ class DescriptionPlace extends StatelessWidget {
     final description = Container(
       margin: EdgeInsets.only(top: 14.0, left: 20.0, right: 20.0),
       child: Text(descriptionPlace,
-          textAlign: TextAlign.left, style: TextStyle(fontSize: 15.0)),
+          textAlign: TextAlign.left,
+          style: TextStyle(fontSize: 15.0, fontFamily: "Lato")),
     );
 
     // * Cuando los elementos estan apilados uno debajo del otro pues utilizamos una columna.
