@@ -12,7 +12,7 @@ class DescriptionPlace extends StatelessWidget {
   Widget build(BuildContext context) {
     final star = drawStars(numberStars);
 
-    final title_start = Row(
+    final titleStart = Row(
       children: <Widget>[
         Container(
             margin: EdgeInsets.only(top: 320.0, left: 20.0, right: 20.0),
@@ -37,7 +37,7 @@ class DescriptionPlace extends StatelessWidget {
 
     // * Cuando los elementos estan apilados uno debajo del otro pues utilizamos una columna.
     return Column(
-      children: <Widget>[title_start, description],
+      children: <Widget>[titleStart, description],
     );
   }
 
